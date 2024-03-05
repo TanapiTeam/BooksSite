@@ -8,7 +8,7 @@ export const Home: NextPage = () => {
     return (
         <div>
             <div className={styles.title}>BooksSite</div>
-            <Button />
+            <Language />
         </div>
     );
 };

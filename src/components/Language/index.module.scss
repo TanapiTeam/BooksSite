@@ -1,18 +1,20 @@
 .flex {
-  display: flex;
+    display: flex;
+    margin: 0 30%;
 }
 
 .LanguageList {
-  display: block;
-  border: 2px solid rgb(217, 213, 213);
-  border-radius: 30px;
-  width: 150px;
-  margin: 50px 50px; 
-  padding: 100px;
-
-  &__Body {
-  }
-  &__icon {
+    display: block;
+    border: 1px solid rgb(217, 213, 213);
+    border-radius: 20px;
     width: 100px;
-  }
+    text-align: center;
+    margin: 20px;
+    padding: 20px 30px;
+
+    &__Body {
+    }
+    &__icon {
+        width: 70px;
+    }
 }
