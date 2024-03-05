@@ -5,7 +5,7 @@ import styles from '@/components/Button/index.module.scss';
 
 export const Button: FC = () => {
     return (
-        <Link href=''>
+        <Link href={'/Search'}>
             <button className={styles.button}>言語選択ボタン</button>
         </Link>
     );
