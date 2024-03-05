@@ -34,8 +34,8 @@ const LanguageList: LanguageListType = [
 export const Language: FC = () => {
     return (
         <div>
-            {LanguageList.map((_, index) => (
-                <div className={st.flex}>
+            <div className={st.flex}>
+                {LanguageList.map((_, index) => (
                     <div className={st.LanguageList}>
                         <div>
                             <div>
@@ -48,8 +48,8 @@ export const Language: FC = () => {
                             <div>{LanguageList[index].language}</div>
                         </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
 
             <div className={st.flex}>
                 <div className={st.LanguageList}>
