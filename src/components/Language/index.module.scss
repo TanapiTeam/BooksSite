@@ -1,20 +1,29 @@
 .flex {
     display: flex;
-    margin: 0 30%;
+    margin: 50 30%;
+    flex-wrap: wrap;
 }
 
 .LanguageList {
     display: block;
-    border: 1px solid rgb(217, 213, 213);
+    border: 1px solid rgb(223, 238, 246);
     border-radius: 20px;
     width: 70px;
     text-align: center;
     margin: 20px;
     padding: 20px 30px;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        background: rgb(249, 249, 249);
+        cursor: pointer;
+    }
 
     &__Body {
     }
     &__icon {
         width: 70px;
+        
     }
 }
