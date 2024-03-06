@@ -1,6 +1,5 @@
 import { NextPage } from 'next';
 import { ImageList } from '@/components/ImageList';
-import { ImageBox } from '@/components/ImageBox';
 import st from './index.module.scss';
 
 export const BooksPage: NextPage = () => {
