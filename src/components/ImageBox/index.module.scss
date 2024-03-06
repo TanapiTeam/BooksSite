@@ -1,9 +1,14 @@
-.imgcontainer {
+.imageContainer {
     width: '200px';
-    margin: '10px';
     border: '1px solid #ccc';
-}
-.imgBox {
-    width: '100%';
-    height: 'auto';
+
+    &__ranking {
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    &__imgBox {
+        width: '100%';
+        height: 'auto';
+    }
 }

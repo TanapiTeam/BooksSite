@@ -1,6 +1,13 @@
 .container {
     &__title {
-        font-size: 30px;
+        margin-top: 30px;
+        font-size: 50px;
         text-align: center;
+    }
+    &__rankingTitle {
+        margin-top: 30px;
+        margin-left: 30px;
+        padding: 20px;
+        font-size: 20px;
     }
 }

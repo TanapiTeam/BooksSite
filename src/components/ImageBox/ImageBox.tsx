@@ -10,8 +10,8 @@ type Props = {
 export const ImageBox: FC<Props> = ({ imgUrl, altText, ranking }) => {
     return (
         <div className={st.imageContainer}>
-            <div>{ranking}</div>
-            <img src={imgUrl} alt={altText} className={st.imgBox} />
+            <div className={st.imageContainer__ranking}>{ranking}</div>
+            <img src={imgUrl} alt={altText} className={st.imageContainer__imgBox} />
         </div>
     );
 };
