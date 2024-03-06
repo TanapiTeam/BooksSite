@@ -1,0 +1,14 @@
+.imageContainer {
+    width: '200px';
+    border: '1px solid #ccc';
+
+    &__ranking {
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    &__imgBox {
+        width: '100%';
+        height: 'auto';
+    }
+}
