@@ -1,11 +1,10 @@
 import { FC, ReactNode } from 'react';
 import st from './index.module.scss';
-import router from 'next/router';
 import Link from 'next/link';
 
 type LanguageListType = { id: string; language: string; context: string; url?: string }[];
 
-const LanguageList = [
+export const LanguageList = [
     {
         id: '1',
         language: 'TypeScript',
