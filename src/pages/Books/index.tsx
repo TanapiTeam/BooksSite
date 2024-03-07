@@ -2,6 +2,7 @@ import { NextPage } from 'next';
 import { ImageList } from '@/components/ImageList';
 import { LanguageList } from '@/components/Language';
 import st from './index.module.scss';
+import { BookModal } from '@/components/BookModal';
 
 export const BooksPage: NextPage = () => {
     return (
@@ -17,6 +18,7 @@ export const BooksPage: NextPage = () => {
                 <ImageList />
                 <div className={st.container__rankingTitle}>発売日順</div>
                 <ImageList />
+                <BookModal />
             </div>
         </div>
     );
