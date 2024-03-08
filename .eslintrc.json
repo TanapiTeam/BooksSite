@@ -1,29 +1,29 @@
 {
-  "plugins": ["import"],
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:import/recommended",
-    "plugin:import/warnings",
-    "prettier",
-    "plugin:storybook/recommended"
-  ],
-  "rules": {
-    "import/named": ["error", { "name": "AxiosResponse" }],
-    "import/order": [
-      "error",
-      {
-        "groups": [
-          "index",
-          "sibling",
-          "parent",
-          "internal",
-          "external",
-          "builtin",
-          "object",
-          "type"
-        ]
-      }
+    "plugins": ["import"],
+    "extends": [
+        "next/core-web-vitals",
+        "plugin:import/recommended",
+        "plugin:import/warnings",
+        "prettier",
+        "plugin:storybook/recommended"
     ],
-    "import/no-unresolved": "off"
-  }
+    "rules": {
+        "import/named": "error",
+        "import/order": [
+            "error",
+            {
+                "groups": [
+                    "index",
+                    "sibling",
+                    "parent",
+                    "internal",
+                    "external",
+                    "builtin",
+                    "object",
+                    "type"
+                ]
+            }
+        ],
+        "import/no-unresolved": "off"
+    }
 }
