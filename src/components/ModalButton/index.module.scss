@@ -1,0 +1,61 @@
+.container {
+    width: 100%;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__bookInfo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__bookIntro {
+        width: 100%;
+        // margin-left: 30px;
+    }
+
+    &__imgBox {
+        display: flex;
+        align-items: center;
+        padding: 30px;
+
+        &__thumbnail {
+            width: 100%;
+        }
+    }
+
+    &__bookContent {
+        border: 1px solid;
+        margin-bottom: 15px;
+        height: 60px;
+
+        &__author {
+        }
+
+        &__pageNumber {
+        }
+
+        &__publishDate {
+        }
+    }
+
+    &__bookTextArea {
+        border: 1px solid;
+        margin-bottom: 15px;
+        height: 200px;
+    }
+
+    &__linkBox {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__linkButton {
+        text-decoration: none;
+        border: solid 1px;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0 10px;
+    }
+}
