@@ -6,13 +6,15 @@
     }
 
     &__thumbnail {
-        text-align: center;
+        width: 50%;
+        margin: 0 auto;
     }
 
     ul {
         list-style-type: none;
         padding: 0;
     }
+
     &__list {
         border: 1px solid;
         margin-bottom: 15px;

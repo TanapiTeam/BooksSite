@@ -21,18 +21,31 @@ export const ModalButton: FC<Props> = ({ isOpen, closeModal }) => {
                 <div className={st.container}>
                     <h2 className={st.container__title}>本のタイトル</h2>
                     <p>{modalContent}</p>
-                    <p>本のサムネイル</p>
-                    <img
-                        src='https://picsum.photos/200'
-                        alt='本の画像'
-                        className={st.container__thumbnail}
-                    />
-                    <ul>
-                        <li className={st.container__list}>著者:</li>
-                        <li className={st.container__list}>ページ数:</li>
-                        <li className={st.container__list}>発売日:</li>
-                        <li className={st.container__list}>概要:</li>
-                    </ul>
+                    <div className={st.container__imgBox}>
+                        <img
+                            src='https://picsum.photos/200'
+                            alt='本の画像'
+                            className={st.container__thumbnail}
+                        />
+                    </div>
+                    <div>
+                        <div className={st.container__bookInfo}>
+                            <p>著者:</p>
+                            <p></p>
+                        </div>
+                        <div className={st.container__bookInfo}>
+                            <p className={st.container__}>ページ数:</p>
+                            <p></p>
+                        </div>
+                        <div className={st.container__bookInfo}>
+                            <p className={st.container__list}>発売日:</p>
+                            <p></p>
+                        </div>
+                        <div className={st.container__bookContent}>
+                            <p className={st.container__list}>概要:</p>
+                            <div></div>
+                        </div>
+                    </div>
                     <div className={st.container__linkBox}>
                         <Link className={st.container__linkButton} href={''}>
                             Amazon
