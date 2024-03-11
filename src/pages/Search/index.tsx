@@ -1,8 +1,5 @@
-import { NextPage } from 'next';
-import { useRouter } from 'next/router';
 import styles from '@/pages/index.module.scss';
-import { Language } from '@/components/Language';
-import { Button } from '@/components/Button';
+import { NextPage } from 'next';
 
 export const Home: NextPage = () => {
     return (
