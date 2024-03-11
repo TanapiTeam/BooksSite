@@ -1,5 +1,6 @@
-import { FC } from 'react';
 import st from './index.module.scss';
+import { FC } from 'react';
+import Image from 'next/image';
 
 type Props = {
     imgUrl: string;
@@ -11,7 +12,7 @@ export const ImageBox: FC<Props> = ({ imgUrl, altText, ranking }) => {
     return (
         <div className={st.imageContainer}>
             <div className={st.imageContainer__ranking}>{ranking}</div>
-            <img src={imgUrl} alt={altText} className={st.imageContainer__imgBox} />
+            <Image src={imgUrl} alt={altText} className={st.imageContainer__imgBox} width={200} height={200} />
         </div>
     );
 };

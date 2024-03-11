@@ -1,7 +1,9 @@
+import st from './index.module.scss';
 import { FC, ReactNode } from 'react';
 import Modal from 'react-modal';
-import st from './index.module.scss';
 import Link from 'next/link';
+import Image from 'next/image';
+
 
 type Props = {
     children: ReactNode;
@@ -18,10 +20,12 @@ export const ModalButton: FC<Props> = ({ isOpen, closeModal }) => {
 
                     <div className={st.container__bookInfo}>
                         <div className={st.container__imgBox}>
-                            <img
+                            <Image
                                 src='https://picsum.photos/500'
                                 alt='本の画像'
                                 className={st.container__thumbnail}
+                                width={500}
+                                height={500}
                             />
                         </div>
                         <div className={st.container__bookIntro}>

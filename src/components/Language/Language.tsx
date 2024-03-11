@@ -1,6 +1,7 @@
 import { FC, ReactNode } from 'react';
 import st from './index.module.scss';
 import Link from 'next/link';
+import Image from 'next/image';
 
 type LanguageListType = { id: string; language: string; context: string; url: string }[];
 
@@ -74,7 +75,7 @@ export const Language: FC = () => {
                 {LanguageList.map((elem, index) => (
                     <Link className={st.LanguageList} key={index} href={elem.url}>
                         <div key={elem.id}>
-                            <img src={elem.context} className={st.LanguageList__icon} />
+                            <Image src={elem.context} className={st.LanguageList__icon} width={70} height={70} alt='icon'/>
                             <div>{elem.language}</div>
                         </div>
                     </Link>

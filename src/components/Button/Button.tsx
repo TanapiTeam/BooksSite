@@ -1,7 +1,6 @@
+import styles from '@/components/Button/index.module.scss';
 import { FC } from 'react';
 import Link from 'next/link';
-
-import styles from '@/components/Button/index.module.scss';
 
 export const Button: FC = () => {
     return (
